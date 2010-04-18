@@ -1,6 +1,6 @@
 <?php
 
-define('DB_FILENAME', '/home/angstrom/website/repo-updater/feeds.db');
+define('DB_FILENAME', 'feeds.db');
 define('FB_BASE_DIR', '/home/angstrom/website/repo-updater/');
 $feed_base_url = "http://www.angstrom-distribution.org/unstable/feed/";
 
