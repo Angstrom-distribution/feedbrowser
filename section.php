@@ -45,8 +45,10 @@ if (isset($_POST["action"]) && $_POST["action"] != "") {
 	exit;
 }
 
-if (isset($_POST["pkgsearch"]) && $_POST["pkgsearch"] != "") {
+if (isset($_POST["pkgsearch"])) {
         $pkgsearch = $_POST["pkgsearch"];
+} else {
+        $pkgsearch = "";
 }
 
 if (isset($_POST["section"]) && $_POST["section"] != "") {
