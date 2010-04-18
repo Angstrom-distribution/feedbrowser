@@ -5,6 +5,7 @@ html, body
   background-color: #ffffff;
   font-family: verdana, helvetica, sans-serif;
   color: #333333;
+  height: 100%;
 }
 
 #left
@@ -119,7 +120,20 @@ dt
   clear: both;
   color: grey;
   background:#efefef;
-  padding: 10px;
-  margin-bottom: -16px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  height: 4em;
+  margin:0;
 }
 
+.push {
+  height: 4em;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em; /* the bottom margin is the negative value of the footer's height */
+}
