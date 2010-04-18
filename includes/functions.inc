@@ -376,9 +376,11 @@ function sectionslist()
 
 		foreach($sections as $section_name1=>$item)
 		{
-			$output .= sprintf ("<li><a href='?section=%s' title='%s'>%s</a>",
+			$output .= sprintf ("<img src='css/images/expand.gif' onClick=\"toggleVisibility('%s');\"> <a href='?section=%s' title='%s'>%s</a><br/><div id='%s' style='display:none'>",
+				$section_name1,
 				urlencode($section_name1),
 				urlencode($section_name1),
+				$section_name1,
 				$section_name1);
 
 			if(is_array($item))
@@ -415,7 +417,7 @@ function sectionslist()
 				$output .= '</ul>';
 			}
 
-			$output .= '</li>';
+			$output .= '</div>';
 		}
 
 		$output .= "</ul>\n";

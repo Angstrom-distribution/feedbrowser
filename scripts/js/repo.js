@@ -128,3 +128,14 @@ function queryProgress() {
 		
 	}
 }
+
+function toggleVisibility(elementId) {
+	var elementObj = document.getElementById(elementId);
+	if (elementObj.style.display == '') {
+		elementObj.style.display = 'none';
+	}
+	else {
+		elementObj.style.display = '';
+	}
+}
+
