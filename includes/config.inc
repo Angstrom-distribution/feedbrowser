@@ -1,7 +1,7 @@
 <?php
 
 define('DB_FILENAME', 'feeds.db');
-define('FB_BASE_DIR', '/home/angstrom/website/repo-updater/');
+define('FB_BASE_DIR', '/home/angstrom/website/repo/');
 $feed_base_url = "http://www.angstrom-distribution.org/unstable/feed/";
 
 $feeds = array(
