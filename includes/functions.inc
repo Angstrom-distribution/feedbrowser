@@ -190,7 +190,7 @@ function pkgdetails ($package)
 	{
 		$package = $result[0];
 
-		$details = sprintf("<h1>Package details for %s %s</h1>", $package['packages.p_name'], $package['packages.p_version']);
+		$details = sprintf("<h2>Package details for %s %s</h2>", $package['packages.p_name'], $package['packages.p_version']);
 		$details .= sprintf ("<p id='description'>%s</p>", htmlentities($package['packages.p_desc']));
 		$details .= "<dl>";
 
@@ -300,7 +300,7 @@ function pkgdetails ($package)
 	}
 	else
 	{
-		$details = "<h1>Sorry, package not found\n</h1><a href='./'>return</a>\n";
+		$details = "<h2>Sorry, package not found\n</h2><a href='./'>return</a>\n";
 	}
 
 	return $details;
