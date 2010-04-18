@@ -85,7 +85,7 @@ dt
 }
 .download:before
 {
-	content:  url("http://ewi546.ewi.utwente.nl/tmp/hrw/fb/img/package-x-generic.png"); 
+	content:  url("images/package-x-generic.png"); 
 	padding: 0 2px;
 }
 
