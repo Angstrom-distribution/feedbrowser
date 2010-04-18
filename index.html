@@ -18,22 +18,27 @@
 					<select name="arch">
 					   <option value="" selected="selected">all architectures</option>
 					   <option value="all">no arch</option>
-<?php
-
-foreach($archs_list as $architecture)
-{
-    echo "<option value='{$architecture['p_arch']}'";
-
-    if($architecture['p_arch'] == $arch)
-    {
-	echo ' selected="selected"';
-    }
-    echo ">{$architecture['p_arch']}</option>";
-}
-
-?>
-
-
+					   <option value='armv4t'>armv4t</option>
+					   <option value='armv4'>armv4</option>
+					   <option value='armv5teb'>armv5teb</option>
+					   <option value='armv5te'>armv5te</option>
+					   <option value='armv6-novfp'>armv6-novfp</option>
+					   <option value='armv6'>armv6</option>
+					   <option value='armv7a'>armv7a</option>
+					   <option value='armv7'>armv7</option>
+					   <option value='avr32'>avr32</option>
+					   <option value='bfin'>bfin</option>
+					   <option value='geode'>geode</option>
+					   <option value='i486'>i486</option>
+					   <option value='i586'>i586</option>
+					   <option value='i686'>i686</option>
+					   <option value='iwmmxt'>iwmmxt</option>
+					   <option value='ppc405'>ppc405</option>
+					   <option value='ppc603e'>ppc603e</option>
+					   <option value='ppce300c3'>ppce300c3</option>
+					   <option value='ppce500'>ppce500</option>
+					   <option value='sparc'>sparc</option>
+					   <option value='x86_64'>x86_64</option>
 					</select>
 					<input type="submit" value="Search" />
 				</fieldset>
