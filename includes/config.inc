@@ -1,7 +1,7 @@
 <?php
 
-define('DB_FILENAME', '/home/angstrom/website/repo/feeds.db');
-define('FB_BASE_DIR', '/home/angstrom/website/repo/');
+define('DB_FILENAME', '/home/angstrom/website/repo-updater/feeds.db');
+define('FB_BASE_DIR', '/home/angstrom/website/repo-updater/');
 $feed_base_url = "http://www.angstrom-distribution.org/unstable/feed/";
 
 $feeds = array(
@@ -58,6 +58,10 @@ $feeds = array(
 				'name'=>'armv6 base',
 				'url'=>'armv6/base',
 			),
+                        array(
+                                'name'=>'armv7a base',
+                                'url'=>'armv7a/base',
+                        ),
 			array(  
 				'name'=>'ppc603e base',
 				'url'=>'ppc603e/base',
