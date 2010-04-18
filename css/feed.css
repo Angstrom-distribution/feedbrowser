@@ -1,33 +1,28 @@
-body
+html, body
 {
-	color: #000;
-	background-color: #fff;
-	font-family: Sans;
-	padding: 10px;
-	margin: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: verdana, helvetica, sans-serif;
+  color: #333333;
 }
 
 #left
 {
 	position: absolute;
-	left:10px;
-	top:10px;
-	width:200px;
+	left: 10px;
+	top: 74px;
+	width: 200px;
 	background:#fff;
 }
 
 #right
 {
 	background:#fff;
-	margin-left: 199px;
 	margin-right: 0;
 	voice-family: "\"}\"";
 	voice-family: inherit;
-	margin-left: 201px;
-	margin-right:0;
-}
-html>body #right {
-	margin-left: 201px;
+	margin-left: 211px;
 	margin-right:0;
 }
 
@@ -97,3 +92,34 @@ dt
 {
 	list-style: none;
 }
+
+#header
+{
+  background-image: url("images/top-bg.png");
+  background-repeat: repeat-x;
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  overflow: hidden;
+}
+
+#header h1
+{
+  text-align: right;
+  margin: 0;
+  color: #fdfdff;
+  text-shadow: #000 2px 2px -5px;
+  padding-right: 1em;
+}
+
+#footer
+{
+  text-align: center;
+  font-size: 0.8em;
+  clear: both;
+  color: grey;
+  background:#efefef;
+  padding: 10px;
+  margin-bottom: -16px;
+}
+
