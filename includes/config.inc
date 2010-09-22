@@ -2,13 +2,13 @@
 
 define('DB_FILENAME', 'feeds.db');
 define('FB_BASE_DIR', '/home/angstrom/website/repo/');
-$feed_base_url = "http://www.angstrom-distribution.org/unstable/feed/";
+$feed_base_url = "http://www.angstrom-distribution.org/feeds/unstable/";
 
 $feeds = array(
 	array(
 		'distro_name'=>'Ångström', 
-		'distro_version'=>'unstable',
-		'feed_base_url'=>'http://www.angstrom-distribution.org/unstable/feed/',
+		'distro_version'=>'2010.x glibc',
+		'feed_base_url'=>'http://www.angstrom-distribution.org/feeds/unstable/ipk/glibc/',
 		'feeds'=> 
 		array(
 			array(
@@ -59,8 +59,32 @@ $feeds = array(
 				'url'=>'armv6/base',
 			),
                         array(
+                                'name'=>'armv6 gstreamer',
+                                'url'=>'armv6/gstreamer',
+                        ),
+                        array(
+                                'name'=>'armv6 perl',
+                                'url'=>'armv6/perl',
+                        ),
+                        array(
+                                'name'=>'armv6 python',
+                                'url'=>'armv6/pyton',
+                        ),
+                        array(
                                 'name'=>'armv7a base',
                                 'url'=>'armv7a/base',
+                        ),
+                        array(
+                                'name'=>'armv7a gstreamer',
+                                'url'=>'armv7a/gstreamer',
+                        ),
+                        array(
+                                'name'=>'armv7a perl',
+                                'url'=>'armv7a/perl',
+                        ),
+                        array(
+                                'name'=>'armv7a python',
+                                'url'=>'armv7a/pyton',
                         ),
 			array(  
 				'name'=>'ppc603e base',
