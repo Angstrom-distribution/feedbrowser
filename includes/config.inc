@@ -68,7 +68,7 @@ $feeds = array(
                         ),
                         array(
                                 'name'=>'armv6 python',
-                                'url'=>'armv6/pyton',
+                                'url'=>'armv6/python',
                         ),
                         array(
                                 'name'=>'armv7a base',
@@ -84,7 +84,7 @@ $feeds = array(
                         ),
                         array(
                                 'name'=>'armv7a python',
-                                'url'=>'armv7a/pyton',
+                                'url'=>'armv7a/python',
                         ),
 			array(  
 				'name'=>'ppc603e base',
