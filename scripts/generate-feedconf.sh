@@ -1,6 +1,8 @@
 #!/bin/sh
 
-for arch in 486sx all arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7 armv7a avr32 blackfin geode i486 i586 i686 iwmmxt mips mipsel powerpc ppc405 ppc440e ppc500 ppc603e ppce300c2 ppce300c3 ppce500 ppce500v2 ppce600 sh4 sparc x86 x86_64 ; do
+echo "\t\t\tarray('name'=>'All architectures',\t'url'=>'all',),"
+
+for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7 armv7a avr32 blackfin geode i486 i586 i686 iwmmxt mips mipsel powerpc ppc405 ppc440e ppc500 ppc603e ppce300c2 ppce300c3 ppce500 ppce500v2 ppce600 sh4 sparc x86 x86_64 ; do
 	echo "\t\t\tarray('name'=>'${arch} base',\t'url'=>'${arch}/base',),"
 	echo "\t\t\tarray('name'=>'${arch} perl',\t'url'=>'${arch}/perl',),"
 	echo "\t\t\tarray('name'=>'${arch} python',\t'url'=>'${arch}/python',),"
