@@ -41,7 +41,7 @@ for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7
         "armv6-novfp")
                 machines="htcblackstone htcdiamond htcdream htckaiser htcnike htcpolaris htcraphael htctitan htcvogue" ;;
         "armv7a")
-                machines="am3517-evm am3517-crane am45x-evm archos5 archos5it archosa32 beagleboard bug20 cm-t35 dm37x-evm am37x-evm am387x-evm am389x-evm babbage c6a814x-evm c6a816x-evm dm814x-evm efikamx htcleo igep0020 nokia900 omap3517-evm omap3evm omap3-pandora omap3-touchbook omap4430-sdp omapzoom omapzoom2 omapzoom36x overo palmpre omap4430-panda usrp-embedded usrp-e1xx" ;;
+                machines="am3517-evm am3517-crane am45x-evm archos5 archos5it archosa32 beagleboard beaglebone bug20 cm-t35 dm37x-evm am37x-evm am387x-evm am389x-evm babbage c6a814x-evm c6a816x-evm dm814x-evm efikamx htcleo igep0020 nokia900 omap3517-evm omap3evm omap3-pandora omap3-touchbook omap4430-sdp omapzoom omapzoom2 omapzoom36x overo palmpre omap4430-panda usrp-embedded usrp-e1xx" ;;
         "armv7a-vfp")
                 machines="ac100" ;;
         "avr32")
@@ -88,10 +88,10 @@ for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7
         "x86")
                 machines="colinux" ;;
         "x86_64")
-                machines="qemux86" ;;
+                machines="qemux86_64" ;;
     esac
 
-	for machine in $machine ; do
+	for machine in $machines ; do
 		echo "\t\t\tarray('name'=>'${machine} machine feed',\t'url'=>'${arch}/machine/${machine}',),"
 	done
 done
