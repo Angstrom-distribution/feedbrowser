@@ -7,7 +7,7 @@ $feed_base_url = "http://www.angstrom-distribution.org/feeds/unstable/";
 $feeds = array(
 	array(  
 		'distro_name'=>'Ångström',
-		'distro_version'=>'2010.x glibc',
-		'feed_base_url'=>'http://www.angstrom-distribution.org/feeds/unstable/ipk/glibc/',
+		'distro_version'=>'2011.03 glibc',
+		'feed_base_url'=>'http://www.angstrom-distribution.org/feeds/2011.03/ipk/glibc/',
 		'feeds'=>
 		array(  
