@@ -2,7 +2,7 @@
 
 echo "\t\t\tarray('name'=>'All architectures',\t'url'=>'all',),"
 
-for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7 armv7a avr32 blackfin geode i486 i586 i686 iwmmxt mips mipsel powerpc ppc405 ppc440e ppc500 ppc603e ppce300c2 ppce300c3 ppce500 ppce500v2 ppce600 sh4 sparc x86 x86_64 ; do
+for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7 armv7a avr32 blackfin geode i486 i586 i686 iwmmxt mips32 mipsel powerpc ppc405 ppc440e ppc500 ppc603e ppce300c2 ppce300c3 ppce500 ppce500v2 ppce600 sh4 sparc x86 x86_64 ; do
 	echo "\t\t\tarray('name'=>'${arch} base',\t'url'=>'${arch}/base',),"
 	echo "\t\t\tarray('name'=>'${arch} perl',\t'url'=>'${arch}/perl',),"
 	echo "\t\t\tarray('name'=>'${arch} python',\t'url'=>'${arch}/python',),"
@@ -54,12 +54,12 @@ for arch in 486sx arm-oabi armv4 armv4t armv5te armv5teb armv6 armv6-novfp armv7
         "i486")
                 machines="wrap" ;;
         "i586")
-                machines="d201gly2 epia i586-generic netvisa progear x86 x86-uml" ;;
+                machines="d201gly2 epia i586-generic netvisa progear qemux86 x86 x86-uml" ;;
         "i686")
-                machines="eee701 i686-generic guinness progear ion qemux86 vmware x86-32-nocona x86-prescott" ;;
+                machines="eee701 i686-generic guinness progear ion vmware x86-32-nocona x86-prescott" ;;
         "iwmmxt")
                 machines="" ;;
-        "mips")
+        "mips32")
                 machines="qemumips" ;;
         "mipsel")
                 machines="ben-nanonote db1200 lsmipsel mtx-1 mtx-2 qemumipsel rb500 stb225 wgt634u wl500g wrt54" ;;
