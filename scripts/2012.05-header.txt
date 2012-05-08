@@ -1,0 +1,6 @@
+	array(  
+		'distro_name'=>'Ångström',
+		'distro_version'=>'v2012.05 eglibc',
+		'feed_base_url'=>'http://www.angstrom-distribution.org/feeds/v2012.05/ipk/eglibc/',
+		'feeds'=>
+		array(  
